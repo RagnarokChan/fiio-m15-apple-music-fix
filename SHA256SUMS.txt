@@ -1,3 +1,4 @@
 381c0ea2aa6812380f2ca6798ba74ee4c0f04d79ce42ced330d255ef9d3d8d34  M15-system-compat-V1-1.0.4-2026-10-01-kit.zip
+eeffb880b6ca40698e7d756f0073bfef74b7d09db41fe7a1909650a07839f2e9  AppleMusic-4.9.7.2-M15-login-patch-V2-Windows.zip
 6d9a0829541bbcce81888bc0322b33cdb3732cf08099d57f551b5af19696c9f5  M15-install-system-compat-V1-1.0.4-2026-10-01.zip
 daf21ac209545168239acd905d64fe2ae5e88b6ff9b3f026a42a960612f422a3  M15-restore-original-system-V1-1.0.4-2026-10-01.zip
