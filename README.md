@@ -8,7 +8,7 @@
 
 这是无偿的社区兼容修复，与 FiiO、Apple 无隶属关系。本次只发布补丁和配套说明，不单独公开开发源码；安装运行必需的脚本和版权材料保留。
 
-**补丁附件尚未公开下载，分发方式正在整理。** 以下为已验收版本的使用说明。
+**系统补丁下载：[V1 发布页](https://github.com/RagnarokChan/fiio-m15-apple-music-fix/releases/tag/V1)。** 下载 `M15-system-compat-V1-1.0.4-2026-10-01-kit.zip`，配套校验值见同页 `SHA256SUMS.txt`。Apple Music 登录补丁另行说明。
 
 ## 修复内容
 
