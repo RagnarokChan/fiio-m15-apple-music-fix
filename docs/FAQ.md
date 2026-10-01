@@ -2,7 +2,7 @@
 
 ## 系统包和登录补丁要都装吗？
 
-当前完整验收组合是系统 V1 加 Apple Music 4.9.7.2 登录修复。系统包解决音频兼容和 Root 误报，不会自动修改 APP 或补登录初始化。
+当前完整验收组合是系统 V1（V2 继续沿用）加 Apple Music 4.9.7.2 登录修复。系统包解决音频兼容和 Root 误报，不会自动修改 APP 或补登录初始化。
 
 ## 为什么不是直接用官方 APP？
 
@@ -38,8 +38,8 @@
 
 ## 下载在哪里，为什么没有完整修改 APK？
 
-系统修复与原厂还原包已在 [V1 发布页](https://github.com/RagnarokChan/fiio-m15-apple-music-fix/releases/tag/V1) 提供，下载 kit 后先解压，真正可刷的是里面的 install、restore 两个 ZIP。
+系统修复、原厂还原和登录差分补丁在 [V2 发布页](https://github.com/RagnarokChan/fiio-m15-apple-music-fix/releases/tag/V2)。系统 kit 先解压，Recovery 刷里面的 install / restore；登录包在 Windows 上用用户提供的原版生成安装文件，不能刷入 Recovery。见 [登录补丁教程](LOGIN_PATCH.md)。
 
-Apple Music 登录修复已完成本地使用验收，但本次不公开完整修改 APK；登录补丁的公开分发形式另行整理。系统包不能代替登录补丁。
+V2 系统包仍保留 V1 文件名，与上版字节一致；已安装者不必重刷。登录差分包不包含完整 APK，也不包含签名私钥。系统包不能代替登录补丁。
 
 GitHub 自动显示的 Source code ZIP/TAR 只是仓库说明和版权文件的归档，不是可刷安装包，也不包含开发源码。
