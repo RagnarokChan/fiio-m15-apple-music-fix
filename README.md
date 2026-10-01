@@ -1,4 +1,4 @@
-# FiiO M15 Apple Music Fix — V1
+# FiiO M15 Apple Music Fix — V2
 
 让 FiiO M15 上的 Apple Music 能登录、能播放，也不再把原厂机器误报为 Root。
 
@@ -8,7 +8,9 @@
 
 这是无偿的社区兼容修复，与 FiiO、Apple 无隶属关系。本次只发布补丁和配套说明，不单独公开开发源码；安装运行必需的脚本和版权材料保留。
 
-**系统补丁下载：[V1 发布页](https://github.com/RagnarokChan/fiio-m15-apple-music-fix/releases/tag/V1)。** 下载 `M15-system-compat-V1-1.0.4-2026-10-01-kit.zip`，配套校验值见同页 `SHA256SUMS.txt`。Apple Music 登录补丁另行说明。
+**下载：[V2 发布页](https://github.com/RagnarokChan/fiio-m15-apple-music-fix/releases/tag/V2)。** 系统修复及还原下载 `M15-system-compat-V1-1.0.4-2026-10-01-kit.zip`；登录差分补丁下载 `AppleMusic-4.9.7.2-M15-login-patch-V2-Windows.zip`。同页 `SHA256SUMS-V2.txt` 提供校验值。
+
+V2 新增登录差分补丁；系统包与已验收 V1 完全一致，文件名保留 V1。已刷过 V1 系统包无需重刷。本项目不公开完整 Apple Music APK，用户提供对应原版后在 Windows 本地生成安装文件。
 
 ## 修复内容
 
@@ -32,7 +34,7 @@
 
 外层 kit 先解压；里面两个可刷 ZIP 不要解压。不要选择 **Wipe data/factory reset**。
 
-对外版本叫 **V1**。Recovery 中的 `V4` 是内部验收标记，不影响使用。
+系统包版本仍为 **V1**，组合发布版本为 **V2**。Recovery 中的 `V4` 是内部验收标记，不影响使用。
 
 ## 原厂还原
 
@@ -48,7 +50,9 @@
 
 已验收版本：**Apple Music 4.9.7.2 / versionCode 1472**。
 
-本地已完成 Windows 安装工具：连接 M15、授权 USB 调试后安装三个配套分包。公开分发方式尚未定稿，暂不提供完整修改 APK 下载。
+下载登录差分包，提供对应原版三分包或 XAPK/APKM 归档，运行 `Generate login repair.cmd`，校验通过后连接 M15 并运行 `Install generated APKs.cmd`。详细步骤与原版校验值见 [登录补丁教程](docs/LOGIN_PATCH.md)。
+
+只补登录初始化，播放器和 Root 检测代码保持原版。生成结果与此前实机验收版逐字节一致；本包不含完整 APK、签名私钥或开发生成源码。
 
 修改版使用项目测试签名，**不是 Apple 原签名**。从官方版切换时通常需要卸载旧版，卸载会清除 APP 账号、设置和下载内容；同签名版本可以尝试覆盖。安装工具不会自动卸载或清数据。
 
